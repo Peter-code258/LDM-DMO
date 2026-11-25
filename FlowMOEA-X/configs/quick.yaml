@@ -1,0 +1,27 @@
+# Quick smoke verification preset (~30s on CPU, ~5s on GPU)
+problems:
+  - FDA1
+  - DF1
+  - DF3
+  - dMOP2
+  - DF10
+algorithms:
+  - FlowMOEA-X
+  - FlowMOEA-X-Pro
+  - DNSGA2
+  - LDT_v32
+  - PPS
+  - AR
+  - GMM
+n_seeds: 5
+pop_size: 60
+n_var: 10
+tau_t: 10
+n_t: 10
+n_envs: 10
+kernel: nsga2
+seed: 2026
+device: auto
+dtype: float32
+strict_fe_budget: true
+results_dir: results/quick

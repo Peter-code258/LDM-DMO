@@ -1,0 +1,58 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "flowmoea-x"
+version = "4.0.0"
+description = "FlowMOEA-X: fully-tensorised (PyTorch 2.x) dynamic multi-objective optimisation with reference-aligned sliced optimal transport, per-dimension Kalman momentum and zero-FE kernel-ridge pre-screening."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "FlowMOEA-X contributors" }]
+keywords = ["dynamic multi-objective optimisation", "optimal transport", "flow matching", "pytorch", "evolutionary computation"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+dependencies = [
+    "torch>=2.2",
+    "numpy>=1.24",
+    "scipy>=1.11",
+    "pandas>=2.0",
+    "pyyaml>=6.0",
+    "matplotlib>=3.7",
+    "plotly>=5.18",
+]
+
+[project.optional-dependencies]
+dashboard = ["streamlit>=1.32"]
+dev = ["pytest>=8.0", "ruff>=0.4"]
+
+[project.scripts]
+flowmoea-x = "main:cli"
+
+[tool.setuptools]
+py-modules = ["main"]
+
+[tool.setuptools.packages.find]
+include = ["flow_dmo*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"
+markers = [
+    "slow: long-running end-to-end regression tests",
+]
+filterwarnings = [
+    "ignore::DeprecationWarning",
+]
+
+[tool.ruff]
+line-length = 110
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "B", "UP"]
+ignore = ["E501", "E741"]

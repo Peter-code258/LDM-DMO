@@ -1,0 +1,44 @@
+# Full publication-grade benchmark preset (B=30 seeds, all 22 problems)
+problems:
+  - FDA1
+  - FDA2
+  - FDA3
+  - FDA4
+  - dMOP1
+  - dMOP2
+  - dMOP3
+  - DF1
+  - DF2
+  - DF3
+  - DF4
+  - DF5
+  - DF6
+  - DF7
+  - DF8
+  - DF9
+  - DF10
+  - DF11
+  - DF12
+  - DF13
+  - DF14
+  - Microgrid-DEED
+algorithms:
+  - FlowMOEA-X
+  - FlowMOEA-X-Pro
+  - DNSGA2
+  - LDT_v32
+  - PPS
+  - AR
+  - GMM
+n_seeds: 30
+pop_size: 100
+n_var: 10
+tau_t: 10
+n_t: 10
+n_envs: 20
+kernel: nsga2
+seed: 2026
+device: auto
+dtype: float32
+strict_fe_budget: true
+results_dir: results/paper

@@ -1,0 +1,833 @@
+{
+  "meta": {
+    "device": "cpu",
+    "control": "FlowMOEA-X",
+    "n_seeds": 5,
+    "pop_size": 60,
+    "tau_t": 10,
+    "n_t": 10,
+    "n_envs": 10,
+    "kernel": "nsga2"
+  },
+  "friedman": {
+    "avg_ranks": {
+      "FlowMOEA-X": 5.2,
+      "FlowMOEA-X-Pro": 4.6,
+      "DNSGA2": 5.8,
+      "LDT_v32": 1.6,
+      "PPS": 2.6,
+      "AR": 2.4,
+      "GMM": 5.8
+    },
+    "chi2_stat": 19.885714285714286,
+    "p_value": 0.0029021189289981115,
+    "iman_davenport_f": 7.864406779661017,
+    "nemenyi_cd": 4.029101041175314
+  },
+  "wtl": {
+    "FlowMOEA-X-Pro": {
+      "W": 0,
+      "T": 5,
+      "L": 0
+    },
+    "DNSGA2": {
+      "W": 0,
+      "T": 5,
+      "L": 0
+    },
+    "LDT_v32": {
+      "W": 0,
+      "T": 5,
+      "L": 0
+    },
+    "PPS": {
+      "W": 0,
+      "T": 5,
+      "L": 0
+    },
+    "AR": {
+      "W": 0,
+      "T": 5,
+      "L": 0
+    },
+    "GMM": {
+      "W": 0,
+      "T": 5,
+      "L": 0
+    }
+  },
+  "summary_rows": [
+    {
+      "problem": "FDA1",
+      "algorithm": "FlowMOEA-X",
+      "migd_mean": 0.030253838036013114,
+      "migd_std": 0.003236698192384152,
+      "mhv_mean": 0.8236778436701486,
+      "mhv_std": 0.0049453513367513505,
+      "wsrr_mean": 0.566913176713132,
+      "transfer_ms": 13.541066666726287,
+      "symbol": ""
+    },
+    {
+      "problem": "FDA1",
+      "algorithm": "FlowMOEA-X-Pro",
+      "migd_mean": 0.02215188462749918,
+      "migd_std": 0.0036680393279369086,
+      "mhv_mean": 0.8378415660053893,
+      "mhv_std": 0.0063092615747574925,
+      "wsrr_mean": 0.7112370458258928,
+      "transfer_ms": 27.326122222095567,
+      "symbol": "="
+    },
+    {
+      "problem": "FDA1",
+      "algorithm": "DNSGA2",
+      "migd_mean": 0.07811033721162731,
+      "migd_std": 0.018078593724355437,
+      "mhv_mean": 0.7515797952904967,
+      "mhv_std": 0.015067277240555184,
+      "wsrr_mean": 0.0,
+      "transfer_ms": 1.9476444445495469,
+      "symbol": "="
+    },
+    {
+      "problem": "FDA1",
+      "algorithm": "LDT_v32",
+      "migd_mean": 0.023096090250302702,
+      "migd_std": 0.002281902186862338,
+      "mhv_mean": 0.8375535565391413,
+      "mhv_std": 0.003231050342143785,
+      "wsrr_mean": 0.6686499661772821,
+      "transfer_ms": 2.8176555553929776,
+      "symbol": "="
+    },
+    {
+      "problem": "FDA1",
+      "algorithm": "PPS",
+      "migd_mean": 0.020914065236086892,
+      "migd_std": 0.0025321173035671787,
+      "mhv_mean": 0.8405471925211512,
+      "mhv_std": 0.003603533535871058,
+      "wsrr_mean": 0.7045174271049646,
+      "transfer_ms": 2.8768999997434244,
+      "symbol": "="
+    },
+    {
+      "problem": "FDA1",
+      "algorithm": "AR",
+      "migd_mean": 0.022091583494231157,
+      "migd_std": 0.004413644626168692,
+      "mhv_mean": 0.8379556199823657,
+      "mhv_std": 0.007640805187341183,
+      "wsrr_mean": 0.688803494682119,
+      "transfer_ms": 1.5878777776379138,
+      "symbol": "="
+    },
+    {
+      "problem": "FDA1",
+      "algorithm": "GMM",
+      "migd_mean": 0.03103545893395234,
+      "migd_std": 0.00436045935667826,
+      "mhv_mean": 0.8284622849595727,
+      "mhv_std": 0.004016689166912081,
+      "wsrr_mean": 0.35623695661240495,
+      "transfer_ms": 1.7359222224008084,
+      "symbol": "="
+    },
+    {
+      "problem": "DF1",
+      "algorithm": "FlowMOEA-X",
+      "migd_mean": 0.03917775731846333,
+      "migd_std": 0.005294786478522971,
+      "mhv_mean": 0.5053655319338424,
+      "mhv_std": 0.010263520505429485,
+      "wsrr_mean": 0.5453218425589681,
+      "transfer_ms": 10.413044444350009,
+      "symbol": ""
+    },
+    {
+      "problem": "DF1",
+      "algorithm": "FlowMOEA-X-Pro",
+      "migd_mean": 0.03758590628863364,
+      "migd_std": 0.004222140603824343,
+      "mhv_mean": 0.5091214368664699,
+      "mhv_std": 0.0062179854094079594,
+      "wsrr_mean": 0.6264880446696304,
+      "transfer_ms": 28.50049999981113,
+      "symbol": "="
+    },
+    {
+      "problem": "DF1",
+      "algorithm": "DNSGA2",
+      "migd_mean": 0.09926374364416726,
+      "migd_std": 0.015890303340833904,
+      "mhv_mean": 0.4076847347943381,
+      "mhv_std": 0.02081466871983435,
+      "wsrr_mean": 0.0,
+      "transfer_ms": 1.9626333332780632,
+      "symbol": "="
+    },
+    {
+      "problem": "DF1",
+      "algorithm": "LDT_v32",
+      "migd_mean": 0.03508483046487746,
+      "migd_std": 0.0032136611447931523,
+      "mhv_mean": 0.5140600936309985,
+      "mhv_std": 0.004984595648724305,
+      "wsrr_mean": 0.6376296979933734,
+      "transfer_ms": 3.0887777777227003,
+      "symbol": "="
+    },
+    {
+      "problem": "DF1",
+      "algorithm": "PPS",
+      "migd_mean": 0.03620373344044855,
+      "migd_std": 0.004988180651546584,
+      "mhv_mean": 0.5117609309173721,
+      "mhv_std": 0.006847063554377747,
+      "wsrr_mean": 0.6008775793219596,
+      "transfer_ms": 3.2961111111136336,
+      "symbol": "="
+    },
+    {
+      "problem": "DF1",
+      "algorithm": "AR",
+      "migd_mean": 0.03546255055947097,
+      "migd_std": 0.004570292211644779,
+      "mhv_mean": 0.5124095646452888,
+      "mhv_std": 0.007471773218197055,
+      "wsrr_mean": 0.6268153159325591,
+      "transfer_ms": 1.5890000001187825,
+      "symbol": "="
+    },
+    {
+      "problem": "DF1",
+      "algorithm": "GMM",
+      "migd_mean": 0.038435750306842854,
+      "migd_std": 0.00771170441346511,
+      "mhv_mean": 0.5067424077543272,
+      "mhv_std": 0.01267721347833482,
+      "wsrr_mean": 0.5248474868546082,
+      "transfer_ms": 2.001599999857717,
+      "symbol": "="
+    },
+    {
+      "problem": "DF3",
+      "algorithm": "FlowMOEA-X",
+      "migd_mean": 0.5170262093758452,
+      "migd_std": 0.06615562790257964,
+      "mhv_mean": 0.10631783674055555,
+      "mhv_std": 0.029645731075567294,
+      "wsrr_mean": -0.03552497823907862,
+      "transfer_ms": 14.482299999953183,
+      "symbol": ""
+    },
+    {
+      "problem": "DF3",
+      "algorithm": "FlowMOEA-X-Pro",
+      "migd_mean": 0.4683530435771942,
+      "migd_std": 0.0846097647858854,
+      "mhv_mean": 0.1241879692951247,
+      "mhv_std": 0.0367552520586958,
+      "wsrr_mean": 0.07689918933038893,
+      "transfer_ms": 28.860211110946288,
+      "symbol": "="
+    },
+    {
+      "problem": "DF3",
+      "algorithm": "DNSGA2",
+      "migd_mean": 0.5009857962114592,
+      "migd_std": 0.12779831517444518,
+      "mhv_mean": 0.10344719350552338,
+      "mhv_std": 0.05511190062283869,
+      "wsrr_mean": 0.0,
+      "transfer_ms": 3.2547333332533728,
+      "symbol": "="
+    },
+    {
+      "problem": "DF3",
+      "algorithm": "LDT_v32",
+      "migd_mean": 0.3542851447789729,
+      "migd_std": 0.044167384998860464,
+      "mhv_mean": 0.1663409310555887,
+      "mhv_std": 0.018205701976876633,
+      "wsrr_mean": 0.27618165032715025,
+      "transfer_ms": 5.551444444386612,
+      "symbol": "="
+    },
+    {
+      "problem": "DF3",
+      "algorithm": "PPS",
+      "migd_mean": 0.37888066469219384,
+      "migd_std": 0.16420475698971873,
+      "mhv_mean": 0.17359377904843648,
+      "mhv_std": 0.09679365445034412,
+      "wsrr_mean": 0.2904517600457325,
+      "transfer_ms": 5.2356111110485575,
+      "symbol": "="
+    },
+    {
+      "problem": "DF3",
+      "algorithm": "AR",
+      "migd_mean": 0.43730965085430923,
+      "migd_std": 0.05107172060499522,
+      "mhv_mean": 0.13543384548927365,
+      "mhv_std": 0.019563027205432668,
+      "wsrr_mean": 0.10761515356824403,
+      "transfer_ms": 2.334855555798438,
+      "symbol": "="
+    },
+    {
+      "problem": "DF3",
+      "algorithm": "GMM",
+      "migd_mean": 0.5466063903467734,
+      "migd_std": 0.03184086219203278,
+      "mhv_mean": 0.09552731638036291,
+      "mhv_std": 0.016446422668668234,
+      "wsrr_mean": -0.07170784407574467,
+      "transfer_ms": 2.8673000000101942,
+      "symbol": "="
+    },
+    {
+      "problem": "dMOP2",
+      "algorithm": "FlowMOEA-X",
+      "migd_mean": 0.6221298299586783,
+      "migd_std": 0.1312688909860645,
+      "mhv_mean": 0.08585551122624102,
+      "mhv_std": 0.05684953668846215,
+      "wsrr_mean": 0.42143858146134716,
+      "transfer_ms": 14.452566666881872,
+      "symbol": ""
+    },
+    {
+      "problem": "dMOP2",
+      "algorithm": "FlowMOEA-X-Pro",
+      "migd_mean": 0.6333497188127174,
+      "migd_std": 0.1256965638279945,
+      "mhv_mean": 0.0863608665806926,
+      "mhv_std": 0.03813176036084557,
+      "wsrr_mean": 0.4652612670065278,
+      "transfer_ms": 30.007455555581448,
+      "symbol": "="
+    },
+    {
+      "problem": "dMOP2",
+      "algorithm": "DNSGA2",
+      "migd_mean": 0.9845421050923667,
+      "migd_std": 0.08729423246443672,
+      "mhv_mean": 0.02452296263750603,
+      "mhv_std": 0.010047097329710764,
+      "wsrr_mean": 0.0,
+      "transfer_ms": 3.185122222223274,
+      "symbol": "="
+    },
+    {
+      "problem": "dMOP2",
+      "algorithm": "LDT_v32",
+      "migd_mean": 0.26293533888964693,
+      "migd_std": 0.11186509658582544,
+      "mhv_mean": 0.29864583089423896,
+      "mhv_std": 0.05820319520643433,
+      "wsrr_mean": 0.6655418757516485,
+      "transfer_ms": 5.906255555601092,
+      "symbol": "="
+    },
+    {
+      "problem": "dMOP2",
+      "algorithm": "PPS",
+      "migd_mean": 0.4446362350645246,
+      "migd_std": 0.21455142461779175,
+      "mhv_mean": 0.18340597596596453,
+      "mhv_std": 0.13365249576837762,
+      "wsrr_mean": 0.5622148941872392,
+      "transfer_ms": 5.191833333406572,
+      "symbol": "="
+    },
+    {
+      "problem": "dMOP2",
+      "algorithm": "AR",
+      "migd_mean": 0.5066199284057216,
+      "migd_std": 0.23950855487726452,
+      "mhv_mean": 0.15383111022319157,
+      "mhv_std": 0.12164878857998988,
+      "wsrr_mean": 0.5592129645606361,
+      "transfer_ms": 2.87594444449092,
+      "symbol": "="
+    },
+    {
+      "problem": "dMOP2",
+      "algorithm": "GMM",
+      "migd_mean": 0.6186538105404494,
+      "migd_std": 0.08167891754797786,
+      "mhv_mean": 0.10649896293496283,
+      "mhv_std": 0.04745690034662359,
+      "wsrr_mean": 0.519567624475165,
+      "transfer_ms": 3.0373888887172344,
+      "symbol": "="
+    },
+    {
+      "problem": "DF10",
+      "algorithm": "FlowMOEA-X",
+      "migd_mean": 0.1312237837960572,
+      "migd_std": 0.0120873337795138,
+      "mhv_mean": 1.1549197916666671,
+      "mhv_std": 0.017928180012224515,
+      "wsrr_mean": -0.23970885918127172,
+      "transfer_ms": 9.910488888736937,
+      "symbol": ""
+    },
+    {
+      "problem": "DF10",
+      "algorithm": "FlowMOEA-X-Pro",
+      "migd_mean": 0.14448359084179588,
+      "migd_std": 0.015313684882418896,
+      "mhv_mean": 1.1361881618923615,
+      "mhv_std": 0.023839291348983088,
+      "wsrr_mean": -0.3671086511247002,
+      "transfer_ms": 29.574522222295247,
+      "symbol": "="
+    },
+    {
+      "problem": "DF10",
+      "algorithm": "DNSGA2",
+      "migd_mean": 0.12871219106246526,
+      "migd_std": 0.01126370672741611,
+      "mhv_mean": 1.164177289496528,
+      "mhv_std": 0.020720977249770428,
+      "wsrr_mean": 0.0,
+      "transfer_ms": 1.9581555554598,
+      "symbol": "="
+    },
+    {
+      "problem": "DF10",
+      "algorithm": "LDT_v32",
+      "migd_mean": 0.10146793454334091,
+      "migd_std": 0.00711612979998122,
+      "mhv_mean": 1.204471234809028,
+      "mhv_std": 0.014580117895401744,
+      "wsrr_mean": -0.15799297024276787,
+      "transfer_ms": 3.024622222154802,
+      "symbol": "="
+    },
+    {
+      "problem": "DF10",
+      "algorithm": "PPS",
+      "migd_mean": 0.1435048477210608,
+      "migd_std": 0.013821262102724188,
+      "mhv_mean": 1.146471061197917,
+      "mhv_std": 0.021051045354379686,
+      "wsrr_mean": -0.3649763298960239,
+      "transfer_ms": 3.0748888887804546,
+      "symbol": "="
+    },
+    {
+      "problem": "DF10",
+      "algorithm": "AR",
+      "migd_mean": 0.1212746595642197,
+      "migd_std": 0.02041118819023962,
+      "mhv_mean": 1.1653037868923615,
+      "mhv_std": 0.02859208320970458,
+      "wsrr_mean": -0.4012259745674056,
+      "transfer_ms": 1.6834222224133555,
+      "symbol": "="
+    },
+    {
+      "problem": "DF10",
+      "algorithm": "GMM",
+      "migd_mean": 0.15765983524787164,
+      "migd_std": 0.012167962216547923,
+      "mhv_mean": 1.1140337131076392,
+      "mhv_std": 0.023463673741523347,
+      "wsrr_mean": -1.1838657020891263,
+      "transfer_ms": 1.8774222221003987,
+      "symbol": "="
+    }
+  ],
+  "ledger_rows": [
+    {
+      "n_envs": 10,
+      "env_fe_quota": 600,
+      "sensor_fe": 54,
+      "warmstart_fe": 546,
+      "evolution_fe": 5400,
+      "total_fe_per_seed": 6000,
+      "all_envs_exact": true,
+      "problem": "FDA1",
+      "algorithm": "FlowMOEA-X"
+    },
+    {
+      "n_envs": 10,
+      "env_fe_quota": 600,
+      "sensor_fe": 54,
+      "warmstart_fe": 546,
+      "evolution_fe": 5400,
+      "total_fe_per_seed": 6000,
+      "all_envs_exact": true,
+      "problem": "FDA1",
+      "algorithm": "FlowMOEA-X-Pro"
+    },
+    {
+      "n_envs": 10,
+      "env_fe_quota": 600,
+      "sensor_fe": 54,
+      "warmstart_fe": 546,
+      "evolution_fe": 5400,
+      "total_fe_per_seed": 6000,
+      "all_envs_exact": true,
+      "problem": "FDA1",
+      "algorithm": "DNSGA2"
+    },
+    {
+      "n_envs": 10,
+      "env_fe_quota": 600,
+      "sensor_fe": 54,
+      "warmstart_fe": 546,
+      "evolution_fe": 5400,
+      "total_fe_per_seed": 6000,
+      "all_envs_exact": true,
+      "problem": "FDA1",
+      "algorithm": "LDT_v32"
+    },
+    {
+      "n_envs": 10,
+      "env_fe_quota": 600,
+      "sensor_fe": 54,
+      "warmstart_fe": 546,
+      "evolution_fe": 5400,
+      "total_fe_per_seed": 6000,
+      "all_envs_exact": true,
+      "problem": "FDA1",
+      "algorithm": "PPS"
+    },
+    {
+      "n_envs": 10,
+      "env_fe_quota": 600,
+      "sensor_fe": 54,
+      "warmstart_fe": 546,
+      "evolution_fe": 5400,
+      "total_fe_per_seed": 6000,
+      "all_envs_exact": true,
+      "problem": "FDA1",
+      "algorithm": "AR"
+    },
+    {
+      "n_envs": 10,
+      "env_fe_quota": 600,
+      "sensor_fe": 54,
+      "warmstart_fe": 546,
+      "evolution_fe": 5400,
+      "total_fe_per_seed": 6000,
+      "all_envs_exact": true,
+      "problem": "FDA1",
+      "algorithm": "GMM"
+    },
+    {
+      "n_envs": 10,
+      "env_fe_quota": 600,
+      "sensor_fe": 54,
+      "warmstart_fe": 546,
+      "evolution_fe": 5400,
+      "total_fe_per_seed": 6000,
+      "all_envs_exact": true,
+      "problem": "DF1",
+      "algorithm": "FlowMOEA-X"
+    },
+    {
+      "n_envs": 10,
+      "env_fe_quota": 600,
+      "sensor_fe": 54,
+      "warmstart_fe": 546,
+      "evolution_fe": 5400,
+      "total_fe_per_seed": 6000,
+      "all_envs_exact": true,
+      "problem": "DF1",
+      "algorithm": "FlowMOEA-X-Pro"
+    },
+    {
+      "n_envs": 10,
+      "env_fe_quota": 600,
+      "sensor_fe": 54,
+      "warmstart_fe": 546,
+      "evolution_fe": 5400,
+      "total_fe_per_seed": 6000,
+      "all_envs_exact": true,
+      "problem": "DF1",
+      "algorithm": "DNSGA2"
+    },
+    {
+      "n_envs": 10,
+      "env_fe_quota": 600,
+      "sensor_fe": 54,
+      "warmstart_fe": 546,
+      "evolution_fe": 5400,
+      "total_fe_per_seed": 6000,
+      "all_envs_exact": true,
+      "problem": "DF1",
+      "algorithm": "LDT_v32"
+    },
+    {
+      "n_envs": 10,
+      "env_fe_quota": 600,
+      "sensor_fe": 54,
+      "warmstart_fe": 546,
+      "evolution_fe": 5400,
+      "total_fe_per_seed": 6000,
+      "all_envs_exact": true,
+      "problem": "DF1",
+      "algorithm": "PPS"
+    },
+    {
+      "n_envs": 10,
+      "env_fe_quota": 600,
+      "sensor_fe": 54,
+      "warmstart_fe": 546,
+      "evolution_fe": 5400,
+      "total_fe_per_seed": 6000,
+      "all_envs_exact": true,
+      "problem": "DF1",
+      "algorithm": "AR"
+    },
+    {
+      "n_envs": 10,
+      "env_fe_quota": 600,
+      "sensor_fe": 54,
+      "warmstart_fe": 546,
+      "evolution_fe": 5400,
+      "total_fe_per_seed": 6000,
+      "all_envs_exact": true,
+      "problem": "DF1",
+      "algorithm": "GMM"
+    },
+    {
+      "n_envs": 10,
+      "env_fe_quota": 600,
+      "sensor_fe": 54,
+      "warmstart_fe": 546,
+      "evolution_fe": 5400,
+      "total_fe_per_seed": 6000,
+      "all_envs_exact": true,
+      "problem": "DF3",
+      "algorithm": "FlowMOEA-X"
+    },
+    {
+      "n_envs": 10,
+      "env_fe_quota": 600,
+      "sensor_fe": 54,
+      "warmstart_fe": 546,
+      "evolution_fe": 5400,
+      "total_fe_per_seed": 6000,
+      "all_envs_exact": true,
+      "problem": "DF3",
+      "algorithm": "FlowMOEA-X-Pro"
+    },
+    {
+      "n_envs": 10,
+      "env_fe_quota": 600,
+      "sensor_fe": 54,
+      "warmstart_fe": 546,
+      "evolution_fe": 5400,
+      "total_fe_per_seed": 6000,
+      "all_envs_exact": true,
+      "problem": "DF3",
+      "algorithm": "DNSGA2"
+    },
+    {
+      "n_envs": 10,
+      "env_fe_quota": 600,
+      "sensor_fe": 54,
+      "warmstart_fe": 546,
+      "evolution_fe": 5400,
+      "total_fe_per_seed": 6000,
+      "all_envs_exact": true,
+      "problem": "DF3",
+      "algorithm": "LDT_v32"
+    },
+    {
+      "n_envs": 10,
+      "env_fe_quota": 600,
+      "sensor_fe": 54,
+      "warmstart_fe": 546,
+      "evolution_fe": 5400,
+      "total_fe_per_seed": 6000,
+      "all_envs_exact": true,
+      "problem": "DF3",
+      "algorithm": "PPS"
+    },
+    {
+      "n_envs": 10,
+      "env_fe_quota": 600,
+      "sensor_fe": 54,
+      "warmstart_fe": 546,
+      "evolution_fe": 5400,
+      "total_fe_per_seed": 6000,
+      "all_envs_exact": true,
+      "problem": "DF3",
+      "algorithm": "AR"
+    },
+    {
+      "n_envs": 10,
+      "env_fe_quota": 600,
+      "sensor_fe": 54,
+      "warmstart_fe": 546,
+      "evolution_fe": 5400,
+      "total_fe_per_seed": 6000,
+      "all_envs_exact": true,
+      "problem": "DF3",
+      "algorithm": "GMM"
+    },
+    {
+      "n_envs": 10,
+      "env_fe_quota": 600,
+      "sensor_fe": 54,
+      "warmstart_fe": 546,
+      "evolution_fe": 5400,
+      "total_fe_per_seed": 6000,
+      "all_envs_exact": true,
+      "problem": "dMOP2",
+      "algorithm": "FlowMOEA-X"
+    },
+    {
+      "n_envs": 10,
+      "env_fe_quota": 600,
+      "sensor_fe": 54,
+      "warmstart_fe": 546,
+      "evolution_fe": 5400,
+      "total_fe_per_seed": 6000,
+      "all_envs_exact": true,
+      "problem": "dMOP2",
+      "algorithm": "FlowMOEA-X-Pro"
+    },
+    {
+      "n_envs": 10,
+      "env_fe_quota": 600,
+      "sensor_fe": 54,
+      "warmstart_fe": 546,
+      "evolution_fe": 5400,
+      "total_fe_per_seed": 6000,
+      "all_envs_exact": true,
+      "problem": "dMOP2",
+      "algorithm": "DNSGA2"
+    },
+    {
+      "n_envs": 10,
+      "env_fe_quota": 600,
+      "sensor_fe": 54,
+      "warmstart_fe": 546,
+      "evolution_fe": 5400,
+      "total_fe_per_seed": 6000,
+      "all_envs_exact": true,
+      "problem": "dMOP2",
+      "algorithm": "LDT_v32"
+    },
+    {
+      "n_envs": 10,
+      "env_fe_quota": 600,
+      "sensor_fe": 54,
+      "warmstart_fe": 546,
+      "evolution_fe": 5400,
+      "total_fe_per_seed": 6000,
+      "all_envs_exact": true,
+      "problem": "dMOP2",
+      "algorithm": "PPS"
+    },
+    {
+      "n_envs": 10,
+      "env_fe_quota": 600,
+      "sensor_fe": 54,
+      "warmstart_fe": 546,
+      "evolution_fe": 5400,
+      "total_fe_per_seed": 6000,
+      "all_envs_exact": true,
+      "problem": "dMOP2",
+      "algorithm": "AR"
+    },
+    {
+      "n_envs": 10,
+      "env_fe_quota": 600,
+      "sensor_fe": 54,
+      "warmstart_fe": 546,
+      "evolution_fe": 5400,
+      "total_fe_per_seed": 6000,
+      "all_envs_exact": true,
+      "problem": "dMOP2",
+      "algorithm": "GMM"
+    },
+    {
+      "n_envs": 10,
+      "env_fe_quota": 600,
+      "sensor_fe": 54,
+      "warmstart_fe": 546,
+      "evolution_fe": 5400,
+      "total_fe_per_seed": 6000,
+      "all_envs_exact": true,
+      "problem": "DF10",
+      "algorithm": "FlowMOEA-X"
+    },
+    {
+      "n_envs": 10,
+      "env_fe_quota": 600,
+      "sensor_fe": 54,
+      "warmstart_fe": 546,
+      "evolution_fe": 5400,
+      "total_fe_per_seed": 6000,
+      "all_envs_exact": true,
+      "problem": "DF10",
+      "algorithm": "FlowMOEA-X-Pro"
+    },
+    {
+      "n_envs": 10,
+      "env_fe_quota": 600,
+      "sensor_fe": 54,
+      "warmstart_fe": 546,
+      "evolution_fe": 5400,
+      "total_fe_per_seed": 6000,
+      "all_envs_exact": true,
+      "problem": "DF10",
+      "algorithm": "DNSGA2"
+    },
+    {
+      "n_envs": 10,
+      "env_fe_quota": 600,
+      "sensor_fe": 54,
+      "warmstart_fe": 546,
+      "evolution_fe": 5400,
+      "total_fe_per_seed": 6000,
+      "all_envs_exact": true,
+      "problem": "DF10",
+      "algorithm": "LDT_v32"
+    },
+    {
+      "n_envs": 10,
+      "env_fe_quota": 600,
+      "sensor_fe": 54,
+      "warmstart_fe": 546,
+      "evolution_fe": 5400,
+      "total_fe_per_seed": 6000,
+      "all_envs_exact": true,
+      "problem": "DF10",
+      "algorithm": "PPS"
+    },
+    {
+      "n_envs": 10,
+      "env_fe_quota": 600,
+      "sensor_fe": 54,
+      "warmstart_fe": 546,
+      "evolution_fe": 5400,
+      "total_fe_per_seed": 6000,
+      "all_envs_exact": true,
+      "problem": "DF10",
+      "algorithm": "AR"
+    },
+    {
+      "n_envs": 10,
+      "env_fe_quota": 600,
+      "sensor_fe": 54,
+      "warmstart_fe": 546,
+      "evolution_fe": 5400,
+      "total_fe_per_seed": 6000,
+      "all_envs_exact": true,
+      "problem": "DF10",
+      "algorithm": "GMM"
+    }
+  ]
+}
